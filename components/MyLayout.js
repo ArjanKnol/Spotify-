@@ -5,15 +5,13 @@ const Layout = props => (
   <div>
     <style jsx>{`
       div {
-        color: #333;
+        color: #fff;
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 15px;
       }
     `}</style>
     <Header />
-    <div>
-      {props.children}
-    </div>
+    <div>{props.children}</div>
   </div>
 );
 

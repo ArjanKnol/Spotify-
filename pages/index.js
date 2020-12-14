@@ -25,13 +25,13 @@ class Main extends React.Component {
   render() {
     return (
       <Layout>
-        {this.props.playing.track
-          ? <NowPlaying
-              track={this.props.playing.track}
-              user={this.props.playing.user}
-              position={this.props.playing.position}
-            />
-          : null}
+        {this.props.playing.track ? (
+          <NowPlaying
+            track={this.props.playing.track}
+            user={this.props.playing.user}
+            position={this.props.playing.position}
+          />
+        ) : null}
         <div className="app">
           <style jsx>
             {`
@@ -46,7 +46,7 @@ class Main extends React.Component {
             {this.props.session.user !== null ? <AddToQueue /> : null}
             {this.props.session.user !== null ? <Devices /> : null}
           </div>
-          <div style={{ float: 'right', width: '150px' }}>
+          <div style={{ float: 'left', width: '150px' }}>
             <Users items={this.props.users} />
           </div>
         </div>
