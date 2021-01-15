@@ -35,14 +35,14 @@ class NowPlaying extends React.PureComponent {
       <div className="now-playing">
         <style jsx>{`
           .now-playing {
-            background-color: #424d58;
+            background-color: #0d0c0c;
             color: #fff;
             height: 250px;
             position: relative;
             width: 100%;
           }
           .now-playing__text {
-            padding: 40px;
+            padding: 0px 40px;
           }
           .now-playing__bd {
             padding-left: 30px;
@@ -50,6 +50,7 @@ class NowPlaying extends React.PureComponent {
           .now-playing__track-name {
             font-size: 1em;
             padding-top: 1.2em;
+            font-weight: bold;
           }
           .now-playing__artist-name {
             font-size: 0.8em;
@@ -59,22 +60,42 @@ class NowPlaying extends React.PureComponent {
           .now-playing__user {
             padding-top: 0.5em;
           }
+          .now-playing__progress {
+            float: left;
+            width: 75%;
+            background-color: #333232;
+            border-radius: 23px;
+            height: 8px;
+            padding: 4px;
+            margin: 0px 40px;
+          }
           .now-playing__progress_bar {
-            bottom: 0;
-            background-color: #222;
-            height: 5px;
-            position: absolute;
-            width: 100%;
+            //bottom: 0;
+            background-color: #fff;
+            height: 8px;
+            border-radius: 20px;
+            // position: absolute;
+            //top:352px;
           }
           .media,
           .media__bd {
             overflow: hidden;
             _overflow: visible;
             zoom: 1;
+            float: left;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            text-align: center;
+            width: 75%;
           }
           .media .media__img {
             float: left;
             margin-right: 10px;
+            border-radius: 50%;
+          }
+          .media .media__img img {
+            border-radius: 50%;
           }
           .user-image {
             border-radius: 50%;
@@ -85,7 +106,7 @@ class NowPlaying extends React.PureComponent {
         `}</style>
         <div className="now-playing__text media">
           <div className="media__img">
-            <img src={this.props.track.album.images[1].url} width="170" height="170" />
+            <img src={this.props.track.album.images[1].url} width="280" height="280" />
           </div>
           <div className="now-playing__bd media__bd">
             <div className="now-playing__track-name">{this.props.track.name}</div>

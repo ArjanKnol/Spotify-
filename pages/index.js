@@ -36,8 +36,8 @@ class Main extends React.Component {
           <style jsx>
             {`
               .app {
-                margin: 20px;
-                padding: 20px;
+                margin: 0 20px;
+                padding: 0 20px;
               }
             `}
           </style>

@@ -6,7 +6,7 @@ const Layout = props => (
     <style jsx>{`
       div {
         color: #fff;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: 'Sofia Pro', Helvetica, Arial, sans-serif;
         font-size: 15px;
       }
     `}</style>

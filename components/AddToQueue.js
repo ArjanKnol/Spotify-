@@ -135,8 +135,17 @@ class AddToQueue extends Component {
       <div className="add-to-queue" onBlur={this.handleBlur}>
         <style jsx>{`
           .add-to-queue__input {
-            padding: 5px;
             width: 300px;
+            width: 100%;
+            height: 37px;
+            padding-left: 10px;
+            border-radius: 9px;
+            border: none;
+            font-size: 11px;
+            color: #b2b2b2;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 15px;
           }
         `}</style>
         <input

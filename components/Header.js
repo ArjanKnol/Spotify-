@@ -17,8 +17,8 @@ const mainLinkStyle = {
 };
 
 const headerStyle = {
-  backgroundColor: '#e3ebf4',
-  padding: '20px 10px',
+  backgroundColor: '#0D0C0C',
+  padding: '30px 40px',
   height: '30px',
   color: '#333'
 };
@@ -41,6 +41,7 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
           }
           .user-name {
             line-height: 30px;
+            color: #fff;
           }
           .media,
           .media__bd {
@@ -51,6 +52,10 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
           .media .media__img {
             float: left;
             margin-right: 10px;
+          }
+          .btn-scafe {
+            background-color: #0d0c0c;
+            color: #fff;
           }
         `}</style>
         <div className="media__img">
@@ -68,7 +73,7 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
         <div className="user-name media__bd">{getNameFromUser(session.user)}</div>
       </div>
     ) : (
-      <button className="btn btn--dark" style={{ float: 'right' }} onClick={login}>
+      <button className="btn btn--dark btn-scafe" style={{ float: 'right' }} onClick={login}>
         <style jsx>{ButtonStyle}</style>
         <style jsx>{ButtonDarkStyle}</style>
         <FormattedMessage id="login" />
@@ -84,7 +89,7 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
           }
         `}</style>
         <button
-          className="btn btn--dark"
+          className="btn btn--dark btn-scafe"
           onClick={() => {
             muted ? unmutePlayback() : mutePlayback();
           }}

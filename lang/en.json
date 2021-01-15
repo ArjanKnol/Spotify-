@@ -1,12 +1,12 @@
 {
-  "about": "About",
-  "login": "Log in with Spotify",
+  "about": "Over",
+  "login": "Log in met Spotify",
   "online": "Online",
-  "queue.title": "Queue",
-  "queue.empty": "The queue is empty, add a song.",
-  "queue.add": "Add a song",
-  "devices.title": "Devices",
-  "devices.fetch": "Fetch devices",
+  "queue.title": "Wachtrij",
+  "queue.empty": "De wachtrij is leeg, voeg een nummer toe.",
+  "queue.add": "Voeg een nummer toe",
+  "devices.title": "Apparaten",
+  "devices.fetch": "Voeg je apparaat toe",
   "devices.transfer": "Transfer",
-  "devices.empty": "The list of devices is empty,"
+  "devices.empty": "Er doen geen apparaten mee aan deze sessie,"
 }
